@@ -9,6 +9,7 @@
     refs.closeModalBtn.addEventListener("click", toggleModal);
 
     function toggleModal() {
+        document.body.classList.toggle("modal-open"); // дод клас 'modal-open' на body щоб сторінка не прокручувувалася коли відкрита модалка
         refs.modal.classList.toggle("is-hidden");
     }
 })();
