@@ -17,16 +17,17 @@
             <nav class="header__nav">
                 <a class="header__logo" href="#">Web<span>Studio</span></a>
                 <button class="header__btn-burger" type="button" aria-expanded="false" aria-controls="header-wrapper" data-menu-button>
-                    <svg width="40" height="40">
-                        <use href="./"></use>
+                    <svg class="header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="header__icon-cross" href="./images/system/sprite.svg#menu-cross"></use>
+                        <use class="header__icon-menu" href="./images/system/sprite.svg#burger-menu"></use>
                     </svg>
                 </button>
                 <div class="header__wrapper" id="header-wrapper" data-menu>
-                    <ul class="header__menu menu">
+                    <!-- <ul class="header__menu menu">
                         <li class="menu__item"><a class="menu__link menu__link--active" href="#">Студия</a></li>
                         <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-                    </ul>
+                    </ul> -->
                     <ul class="header__contacts contacts">
                         <li class="contacts__item">
                             <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -53,16 +54,16 @@
     <main>
         <!-- =========== hero =========== -->
         <section class="hero">
-            <!-- <h1 class="hero__title">
+            <h1 class="hero__title">
                 Эффективные решения<br />
                 для вашего бизнеса
             </h1>
             <button class="hero__btn" type="submit" data-modal-open>Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="hero__modal">
-                    <button class="btn-modal-close" data-modal-close></button> -->
-            <!-- =============== hero__form =============== -->
-            <!-- <form class="form-modal" autocomplete="on">
+                    <button class="btn-modal-close" data-modal-close></button>
+                    <!-- =============== hero__form =============== -->
+                    <form class="form-modal" autocomplete="on">
                         <div class="form-modal--group" role="group">
                             <p class="form-modal__text">Оставьте свои данные, мы вам перезвоним</p>
                             <ul class="form-modal--list">
@@ -103,7 +104,7 @@
                         </div>
                     </form>
                 </div>
-            </div> -->
+            </div>
         </section>
         <!-- =========== benefits =========== -->
         <!-- <section class="benefits">
