@@ -1,4 +1,4 @@
-%button{
+%button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -7,19 +7,19 @@
     border-radius: 4px;
 
     color: $white-text-color;
-    background:$accent-color;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid $accent-color;
 
     transition: color 250ms $time-distribution-function, background-color 250ms $time-distribution-function,
         border-color 250ms $time-distribution-function;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $accent-color;
         background-color: $bg-color-white;
         border-color: $bg-color-white;
     }
-
 }
 
 %logo {
@@ -30,8 +30,7 @@
 
     color: $accent-color;
 
-    & span{
+    & span {
         color: $header-logo-span;
-
     }
 }
