@@ -95,7 +95,7 @@ button {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1100px) {
   .header__logo {
     font-size: 24px;
     line-height: 1.17;
@@ -148,7 +148,6 @@ button {
     top: 100%;
     left: 0;
     width: 100%;
-    text-align: center;
     border-top: 1px solid #ececec;
   }
   .header__wrapper.is-open {
@@ -224,7 +223,6 @@ button {
 
 .menu__link {
   position: relative;
-  margin: 0 auto;
   padding: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -280,6 +278,10 @@ button {
   }
 }
 
+.contacts__item {
+  line-height: 0;
+}
+
 @media screen and (max-width: 767px) {
   .contacts__item:not(:nth-last-child(1)) {
     margin-bottom: 16px;
@@ -287,18 +289,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts__item {
-    line-height: 0;
-  }
   .contacts__item:not(:nth-last-child(1)) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .contacts__item {
-    line-height: 0;
-  }
   .contacts__item:not(:nth-last-child(1)) {
     margin-bottom: 0px;
   }
@@ -326,12 +322,6 @@ button {
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
