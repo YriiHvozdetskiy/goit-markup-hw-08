@@ -84,7 +84,7 @@
 .header__menu {
     &.menu {
         @media screen and (max-width: 767px) {
-            padding: 60px 15px;
+            padding: 50px 15px;
         }
     }
 }
@@ -92,7 +92,7 @@
 .menu__item {
     @media screen and (max-width: 767px) {
         &:not(:nth-last-child(1)) {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -100,11 +100,13 @@
 .menu__link {
     position: relative;
     margin: 0 auto;
+    padding: 10px;
+
     font-size: 18px;
     line-height: 1.17;
     font-weight: 500;
     letter-spacing: 0.02em;
-    padding: 10px;
+    
     color: $title-color;
     transition: color 250ms $time-distribution-function;
 
@@ -115,6 +117,7 @@
         content: "";
         height: 4px;
         width: 100%;
+
         border-radius: 2px;
         background: #2196f3;
     }
