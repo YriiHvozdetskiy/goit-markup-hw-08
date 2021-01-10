@@ -303,10 +303,6 @@ button {
   }
 }
 
-.contacts__item {
-  line-height: 0;
-}
-
 @media screen and (max-width: 767px) {
   .contacts__item:not(:nth-last-child(1)) {
     margin-bottom: 16px;
