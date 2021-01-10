@@ -125,13 +125,37 @@
 }
 
 .menu__link {
-    position: relative;
-    padding: 10px;
-
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
+
+    padding: 10px;
+
+    color: $title-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    transition: color 250ms $time-distribution-function;
+
+    &--active {
+        position: relative;
+        color: $accent-color;
+        &::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+
+            content: "";
+            height: 4px;
+            width: 100%;
+
+            border-radius: 2px;
+            background: $accent-color;
+        }
+    }
 
     @media screen and (max-width: 767px) {
         font-size: 18px;
@@ -140,26 +164,6 @@
 
     @media screen and (min-width: 768px) {
         padding: 32px 0px;
-    }
-
-    color: $title-color;
-    transition: color 250ms $time-distribution-function;
-
-    &--active::after {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        content: "";
-        height: 4px;
-        width: 100%;
-
-        border-radius: 2px;
-        background: #2196f3;
-    }
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
     }
 }
 
@@ -177,7 +181,6 @@
 }
 
 .contacts__item {
-
     &:not(:nth-last-child(1)) {
         @media screen and (max-width: 767px) {
             margin-bottom: 16px;
@@ -200,7 +203,6 @@
         }
     }
 }
-
 
 .contacts__link {
     // font-weight: 500;
